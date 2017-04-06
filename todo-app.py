@@ -21,8 +21,8 @@ def help_printer():
 def open_database():
     database = open('database.txt', 'r')
     newdata = database.read()
-    print(newdata)
     database.close()
+    view()
 
 def add_line():
     add = open('database.txt', 'a')
