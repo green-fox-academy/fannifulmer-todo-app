@@ -1,6 +1,6 @@
 0;Walk the dog
 1;Buy milk
-0;Do homework
-
-0newline
+0;Go home
 0;newline
+0;newline
+0;ez az mukodiiiik
