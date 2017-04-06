@@ -8,6 +8,14 @@ def help_printer():
 def arg_reader():
     if len(sys.argv) == 1:
         help_printer()
+    else:
+        if sys.argv[1] == '-l':
+            open_database()
+
+def open_database():
+    database = open('database.txt', 'r')
+    database = database.read()
+    print(database)
 
 
 arg_reader()
