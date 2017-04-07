@@ -1,4 +1,5 @@
 import sys
+
 def arguments():
     if len(sys.argv) == 1:
         help_printer()
@@ -8,7 +9,7 @@ def arguments():
         if sys.argv[1] == '-a':
             add_line()
         if sys.argv[1] == '-r':
-            open_database()
+            remove()
         if sys.argv[1] == '-c':
             open_database()
 
@@ -41,6 +42,36 @@ def view():
             print (number,"-", "[ ]", line1[1])
         number += 1
     viewfile.close()
+
+
+def remove():
+    remove = open('database.txt', 'r+')
+    remover = remove.readlines()
+    remove_element = int(sys.argv[2])-1
+    element = ''
+    for i in range(len(remover)):
+        if i == remove_element:
+            element = remover[i]
+    remover.remove(element)
+    remove.close()
+    newdata = open('database.txt', 'w')
+    for j in range(len(remover)):
+        newdata.write(remover[j])
+    newdata.close()
+
+    
+    #view()
+
+# def completes_task():
+#     completes = open('database.txt', 'r+')
+#     for line in completes:
+#         line1 = line.rstrip().split(";")
+#         line[0] == '0'
+#         for 
+            
+        
+    
+    
 
 arguments()
 #print("3;Do homework".split(";"))

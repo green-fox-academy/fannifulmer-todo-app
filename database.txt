@@ -1,6 +1,2 @@
-0;Walk the dog
-1;Buy milk
-0;Go home
-0;newline
-0;newline
-0;ez az mukodiiiik
+0;Buy icecream
+0;Learn python
