@@ -1,2 +1,4 @@
+1;Learn python
 0;Buy icecream
-0;Learn python
+0;Go home
+0;Go swimming
